@@ -1,0 +1,982 @@
+@font-face {
+  font-family: Helvetica-Regular;
+  src: url(fonts/helvetica/Helvetica.woff);
+}
+
+@font-face {
+  font-family: Helvetica-Bold;
+  src: url(fonts/helvetica/Helvetica-Bold.woff);
+}
+
+@font-face {
+  font-family: TireSwingBb-Bold ;
+  src: url(fonts/tireswing/TireSwingBB-Bold.woff2);
+}
+
+@font-face {
+  font-family: Bold-RegularMasiva ;
+  src: url(fonts/masiva/Masiva-Bold.woff2);
+}
+
+@font-face {
+    font-family: "Eina03-SemiBold";
+    src: url("https://db.onlinewebfonts.com/t/b158925a1d762313849f2482a415369d.eot");
+    src: url("https://db.onlinewebfonts.com/t/b158925a1d762313849f2482a415369d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/b158925a1d762313849f2482a415369d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/b158925a1d762313849f2482a415369d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/b158925a1d762313849f2482a415369d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/b158925a1d762313849f2482a415369d.svg#Eina03-SemiBold")format("svg");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=DM+Serif+Text:ital@0;1&family=Imperial+Script&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*SECCIONES (FRAMES)*/
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.seccion0 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  top: 0px;
+}
+.seccion1 {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 1664px;
+}
+.seccion2 {
+  background-color: #ffe6c7;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 1832px;
+}
+.seccion3 {
+  background: #fffdc7;
+  display: flex;
+  flex-direction: column;
+  gap: 66px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 1400px;
+
+}
+.seccion4 {
+  background-color: #dcffc7;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 1500px;
+
+}
+.seccion5 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 1000px;
+ 
+}
+
+/*FORMULARIO*/
+
+
+form {
+ 
+  margin: 0 auto;
+  width: 60%;
+  padding: 1em;
+  padding-left: 20%;
+  background: #efefef;
+}
+
+ul {
+  list-style: none;
+  padding: 9;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 0em;
+  
+}
+
+label {
+  font-size:larger;
+  font-family: "Inter-Bold", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  width: 90px;
+  text-align: left;
+  padding-top: 1.5em;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 75%;
+  height: 40px;
+  box-sizing: border-box;
+ border-radius: 0.2em;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  padding-top: 2em;
+  padding-left:8%;
+}
+
+a:link {
+  color: #ffffff ;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+button {
+  color: #ffffff;
+  font-family: "Eina03SemiBold", sans-serif;
+  font-size: medium;
+  text-align: center;
+  background:#753EF4;
+  margin-left: 0.5em;
+  border-radius: 0.2em;
+  width: 60%;
+  height: 50px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #efefef;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  color: black;
+  max-width: 300px;
+  width: 80%;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #753EF4;;
+  color: white;
+  font-family: "Inter-Bold", sans-serif;
+  border: none;
+  border-radius: 0.2em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: #753EF4;;
+}
+
+/* Y aquí pondría mi carrusel :D
+ SI TAN SOLO TUVIERA UNO >O<
+
+
+/* TITULO, SUBTITULO Y FONDOS*/
+
+.imagen-principal {
+  width: 100%;
+  height: 951px;
+ position: absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+}
+
+.logo-ly-v {
+
+  width: 60%;
+  top: 20px;
+
+}
+.logo-zanahoria-2 {
+  width: 60%;
+  height: 154px;
+}
+
+.subtitulo-principal {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  width: 40%;
+  height: 170px;
+}
+.subtitulo-principal-span {
+  font-family: "Helvetica-Regular", sans-serif;
+}
+.subtitulo-principal-span2 {
+  font-family: "Helvetica-Bold", sans-serif;
+  font-weight: 700;
+}
+.titulo-principal {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton1 {
+  background: #753ef4;
+  border-radius: 6px;
+  width: 456px;
+  height: 114px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Eina03SemiBold", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*TITULOS*/
+
+.tomate {
+  width: 56% ;
+  left: 22%;
+  top: 950px;
+  aspect-ratio: 858/129.79; 
+  color: #ffffff;
+  text-align: center;
+  text-indent: 70px;
+  font-family: "TireSwingBb-Bold", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zanahoria {
+  width: 56% ;
+ 
+  left: 22%;
+  top: 2500px;
+  aspect-ratio: 858/129.79;
+  color: #ffffff;
+  text-align: center;
+  text-indent: 70px;
+  font-family: "TireSwingBb-Bold", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.limon {
+  width: 56% ;
+ 
+  left: 22%;
+  top: 4275px;
+  aspect-ratio: 858/129.79;
+  color: #ffffff;
+  text-align: center;
+  text-indent: 70px;
+  font-family: "TireSwingBb-Bold", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.melon {
+  width: 56% ;
+ 
+  left: 22%;
+  top: 5715px;
+  aspect-ratio: 858/129.79;
+  color: #ffffff;
+  text-align: center;
+  text-indent: 70px;
+  font-family: "TireSwingBb-Bold", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*CONTENIDO (en lo posible ordernarlo un poco, pero por ahora va)*/
+
+.parrafo-1 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  position: relative;
+  width: 804px;
+  height: 180px;
+}
+.parrafo-1-span {
+  font-family: "Inter-Regular", sans-serif;
+}
+.parrafo-1-a {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  position: relative;
+  width: 804px;
+  height: 138px;
+}
+.parrafo-1-a-span {
+  font-family: "Inter-Regular", sans-serif;
+}
+.parrafo-2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+ 
+  left: 3.99px;
+  top: 654.6px;
+  width: 390px;
+  height: 394px;
+}
+.parrafo-2-a {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+ 
+  left: 612.01px;
+  top: 654.75px;
+  width: 404px;
+  height: 297px;
+}
+.parrafo-2-a-span {
+  font-family: "Inter-Bold", sans-serif;
+  font-weight: 700;
+}
+.parrafo-2-a-span2 {
+  font-family: "Inter-Regular", sans-serif;
+}
+
+.parraform {
+  color: #000000;
+  text-align: left;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  position: relative;
+  width: 80%;
+  height: 92px;
+}
+
+.div {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+ 
+  right: 80.47%;
+  left: 16.2%;
+  width: 3.33%;
+  bottom: 76.56%;
+  top: 17.98%;
+  height: 5.46%;
+}
+
+.inscribete-ya {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Eina03SemiBold", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+ 
+  right: 34.23%;
+  left: 34.01%;
+  width: 31.76%;
+  bottom: 8.52%;
+  top: 85.62%;
+  height: 5.86%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.informacionjust {
+  background-color: #efefef;
+  border-radius: 6px;
+  color: #000000;
+  text-align: justified;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+   width: 60%;
+}
+.contenidocaja {
+  background-color: #efefef;
+  border-radius: 6px;
+  color: #000000;
+  text-align: justified;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+    width: 60%;
+}
+.dinerodonde {
+  background-color: #efefef;
+  border-radius: 6px;
+  color: #000000;
+  text-align: justified;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  width: 60%;
+}
+.parrafo-3 {
+  color: #000000;
+  text-align: justified;
+  font-family: "-", sans-serif;
+  font-size: 32px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  position: relative;
+  width: 648px;
+  height: 291px;
+}
+.parrafo-3-span {
+  font-family: "Inter-Medium", sans-serif;
+  font-weight: 500;
+}
+.parrafo-3-span2 {
+  font-family: "Inter-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.image-2 {
+  border-style: solid;
+  border-color: #753ef4;
+  border-width: 9px;
+  width: 208.12px;
+  height: 34px;
+ 
+  left:80%;
+  top: 8600px;
+  object-fit: cover;
+}
+
+.verde {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 397px;
+  position: relative;
+  width: 60%;
+  left: 20%;
+  aspect-ratio: 1062/397;
+}
+
+.amarillo {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 397px;
+  position: relative;
+
+  left: 20%;
+  width: 60%;
+  aspect-ratio: 1062/397;
+}
+
+.imagenes-zanahoria {
+  flex-shrink: 0;
+  width: 80%;
+  height: 480px;
+  position: static;
+  display: flex;
+  flex-direction: row
+}
+
+.cajasjuego {
+  width: 40%;
+  height: 40%;
+
+
+}
+.juegoensi {
+  width: 40%;
+  height: 40%;
+ 
+  left: 611.8px;
+
+
+
+}
+.textos-mango {
+  flex-shrink: 0;
+  width: 1012.02px;
+  height: 394px;
+  position: static;
+}
+
+.juegodesplegado {
+  flex-shrink: 0;
+  width: 806px;
+  height: 537px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 806/537;
+}
+
+.form-desktop {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 751px;
+  position: relative;
+}
+.rectangle-15 {
+  background: #efefef;
+  width: 100%;
+  height: 100%;
+ 
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+
+.group-15 {
+ 
+  inset: 0;
+}
+.rectangle-152 {
+  background: #ffffff;
+  
+  width: 74.36%;
+  height: 9.99%;
+ 
+  right: 11.27%;
+  left: 14.38%;
+  bottom: 75.1%;
+  top: 14.91%;
+}
+.group-14 {
+ 
+  inset: 0;
+}
+.rectangle-16 {
+  background: #ffffff;
+  border-radius: 6px;
+  width: 74.46%;
+  height: 9.99%;
+ 
+  right: 11.27%;
+  left: 14.27%;
+  bottom: 50.73%;
+  top: 39.28%;
+}
+.div2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+ 
+  right: 19.21%;
+  left: 16.2%;
+  width: 64.59%;
+  bottom: 52.46%;
+  top: 42.48%;
+  height: 5.06%;
+}
+.group-16 {
+ 
+  inset: 0;
+}
+.rectangle-17 {
+  background: #ffffff;
+  border-radius: 6px;
+  width: 74.46%;
+  height: 9.99%;
+ 
+  right: 11.27%;
+  left: 14.27%;
+  bottom: 26.36%;
+  top: 63.65%;
+}
+.polygon-5 {
+  width: 4.08%;
+  height: 4.26%;
+ 
+  right: 12.12%;
+  left: 83.8%;
+  bottom: 24.9%;
+  top: 70.84%;
+  overflow: visible;
+}
+.group-17 {
+ 
+  inset: 0;
+}
+.rectangle-18 {
+  background: #753ef4;
+  border-radius: 6px;
+  width: 39.38%;
+  height: 10.65%;
+ 
+  right: 30.36%;
+  left: 30.26%;
+  bottom: 6.13%;
+  top: 83.22%;
+}
+.carrusel-deskstop-0 {
+  width: 1170px;
+  height: 333px;
+ 
+  left: 45px;
+  top: 5320px;
+  overflow: hidden;
+}
+.frame-11 {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1179px;
+  height: 280px;
+
+}
+.frame-4 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.img-4285-1 {
+  flex-shrink: 0;
+  width: 390px;
+  height: 260px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-5 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.w-1 {
+  flex-shrink: 0;
+  width: 390px;
+  height: 260px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-6 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.img-4280-3 {
+  flex-shrink: 0;
+  width: 390px;
+  height: 260px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-7 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.img-4282-2 {
+  flex-shrink: 0;
+  width: 390px;
+  height: 260px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-8 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.img-4274-2 {
+  flex-shrink: 0;
+  width: 390px;
+  height: 260px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-9 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+._3-y-4-1024-x-825-1 {
+  flex-shrink: 0;
+  width: 390px;
+  height: 260px;
+  position: relative;
+  object-fit: cover;
+}
+.frame-10 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.sfsa-1024-x-678-1 {
+  flex-shrink: 0;
+  width: 390px;
+  height: 260px;
+  position: relative;
+  object-fit: cover;
+}
+.group-9 {
+  height: auto;
+ 
+  left: 663px;
+  top: 284px;
+  overflow: visible;
+}
+.group-10 {
+  height: auto;
+ 
+  left: 508px;
+  top: 284px;
+  transform: translate(-32px, 0px);
+  overflow: visible;
+}
+
+
+.pregfrecuentes {
+  flex-shrink: 0;
+  width: 80%;
+}
+.rectangle-7 {
+  background: #efefef;
+  border-radius: 6px;
+  width: 60%;
+  left: 20%;
+  height: 340.59px;
+  top: 242.7px;
+}
+
+
+.pregunta1 {
+  background: #94a767;
+  border-radius: 30px;
+  height: 78px;
+ 
+  box-shadow: 0px 5px 0px 0px rgba(109, 119, 87, 1);
+  width: 66%;
+  left: 17%;
+  top: 170.41px;
+  aspect-ratio: 931.31/139.43;
+    color: #ffffff;
+  text-align: center;
+  font-family: "TireSwingBb-Bold", sans-serif;
+  font-size: 45px;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pregunta2 {
+  background: #94a767;
+  border-radius: 30px;
+  height: 78px;
+ 
+  box-shadow: 0px 5px 0px 0px rgba(109, 119, 87, 1);
+  width: 66%;
+  left: 17%;
+  top: 638px;
+  aspect-ratio: 925.94/151;
+    color: #ffffff;
+  text-align: center;
+  font-family: "TireSwingBb-Bold", sans-serif;
+   font-size: 45px;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pregunta3 {
+  background: #94a767;
+  border-radius: 30px;
+  height: 78px;
+ 
+  box-shadow: 0px 5px 0px 0px rgba(109, 119, 87, 1);
+  width: 66%;
+  left: 17%;
+  top: 1099px;
+  aspect-ratio: 933.83/156.13;
+    color: #ffffff;
+  text-align: center;
+  font-family: "TireSwingBb-Bold", sans-serif;
+    font-size: 45px;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pregunta-desk-3 {
+  flex-shrink: 0;
+  width: 933.83px;
+  height: 679.66px;
+  position: static;
+}
+
+.grafico {
+  width: 56%;
+ 
+  left: 22% ;
+  top: 1469.1px;
+  object-fit: cover;
+  aspect-ratio: 554.2/281.43;
+}
+.rectpreguntas {
+  width: 100%;
+  height: 83px;
+}
+
+.cartones-juego {
+  flex-shrink: 0;
+  width: 453px;
+  height: 453px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+/*FOOTER*/
+
+footer{
+  background-color: #191919;
+  color: #ffffff;
+  text-align: left;
+  font-family: "Bold-RegularMasiva", sans-serif;
+  font-weight: 400;
+}
+
+.leyendas-y-videojuegos {
+  font-size: 40px;
+
+}
+.datoseric {
+  font-size: 32px;
+}
+
