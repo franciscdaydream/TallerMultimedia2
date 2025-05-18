@@ -36,77 +36,394 @@ html{
 
 /*SECCIONES (FRAMES)*/
 
-
-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+body{
+  background-image: url(img/imgprincipal.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size:100% 60em;
 }
 
-.seccion0 {
-  position: absolute;
+section{
+  padding-top: 3em;
+  padding-bottom: 3em;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 80px;
   align-items: center;
-  justify-content: center;
   width: 100%;
   top: 0px;
 }
-.seccion1 {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  align-items: center;
+
+.seccion-titulo{
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 1664px;
+  top: 0px;
+  flex-wrap: wrap; 
 }
-.seccion2 {
+
+.seccion-zanahoria {
   background-color: #ffe6c7;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 1832px;
 }
-.seccion3 {
+.seccion-limon {
   background: #fffdc7;
-  display: flex;
-  flex-direction: column;
-  gap: 66px;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 1400px;
-
 }
-.seccion4 {
+.seccion-melon {
   background-color: #dcffc7;
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 1500px;
-
-}
-.seccion5 {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 1000px;
- 
 }
 
-/*FORMULARIO*/
 
+/* Y aquí pondría mi carrusel :D
+ SI TAN SOLO TUVIERA UNO >O<
+
+
+/* TITULO, SUBTITULO Y FONDOS*/
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-ly-v {
+  width: 6em;
+}
+
+.logo-zanahoria-2 {
+  width: 40em;
+}
+
+.subtitulo-principal {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}
+.subtitulo-principal-span {
+  font-family: "Helvetica-Regular", sans-serif;
+}
+.subtitulo-principal-span2 {
+  font-family: "Helvetica-Bold", sans-serif;
+  font-weight: 700;
+}
+.titulo-principal {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boton1 {
+  background: #753ef4;
+  border-radius: 6px;
+  width: 15em;
+  height: 114px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Eina03SemiBold", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*TITULOS*/
+
+.tomate {
+  background-image: url(img/tomate0.png);
+   height: 2.4em;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 56% ;
+  color: #ffffff;
+  text-align: center;
+  text-indent: 70px;
+  font-family: "TireSwingBb-Bold", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+}
+.zanahoria {
+  background-image: url(img/zanahoria0.png);
+  height: 2.4em;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 56% ;
+  color: #ffffff;
+  text-align: center;
+  text-indent: 70px;
+  font-family: "TireSwingBb-Bold", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.limon {
+  background-image: url(img/limon0.png);
+  height: 2.4em;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 56% ;
+  color: #ffffff;
+  text-align: center;
+  text-indent: 70px;
+  font-family: "TireSwingBb-Bold", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.melon {
+  background-image: url(img/melon0.png);
+   height: 2.4em;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 56% ;
+  color: #ffffff;
+  text-align: center;
+  text-indent: 70px;
+  font-family: "TireSwingBb-Bold", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*///////////////////////////////////SECCION TOMATE////////////////////////////////////////////*/
+
+.parrafo-1 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  position: relative;
+  width: 804px;
+  height: 180px;
+}
+.parrafo-1-span {
+  font-family: "Inter-Regular", sans-serif;
+}
+.parrafo-1-a {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  position: relative;
+  width: 804px;
+  height: 138px;
+}
+.parrafo-1-a-span {
+  font-family: "Inter-Regular", sans-serif;
+}
+
+.verde {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 397px;
+  position: relative;
+  width: 60%;
+  left: 20%;
+  aspect-ratio: 1062/397;
+}
+
+.amarillo {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 397px;
+  position: relative;
+
+  left: 20%;
+  width: 60%;
+  aspect-ratio: 1062/397;
+}
+
+/*///////////////////////////////////SECCION ZANAHORIA////////////////////////////////////////////*/
+
+.imagenes-zanahoria {
+  flex-shrink: 0;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: center;
+  gap: 10%;
+}
+
+.cajasjuego {
+  width:30em;
+  height: 30em;
+
+
+}
+.juegoensi {
+  width:30em;
+  height: 30em;
+  
+}
+.textos-zanahoria {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+  align-items: center;
+  width: 80%;
+}
+
+.parrafo-2 {
+  color: #000000;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  width: 40%;
+
+}
+.parrafo-2-a {
+  color: #000000;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  width: 40%;
+
+}
+.parrafo-2-a-span {
+  font-family: "Inter-Bold", sans-serif;
+  font-weight: 700;
+}
+.parrafo-2-a-span2 {
+  font-family: "Inter-Regular", sans-serif;
+}
+
+.juegodesplegado {
+  flex-shrink: 0;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+/*///////////////////////////////////SECCION LIMON////////////////////////////////////////////*/
+
+.cartones-juego {
+  flex-shrink: 0;
+  width:40em;
+  height: 30em;
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: center;
+}
+.parrafo-3 {
+  color: #000000;
+  text-align: justified;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 32px;
+  letter-spacing: 0.06em;
+  position: relative;
+  width: 60%;
+}
+.parrafo-3-span {
+  font-weight: 500;
+}
+.parrafo-3-span2 {
+  font-family: "Inter-Bold", sans-serif;
+  font-weight: 700;
+}
+
+/*///////////////////////////////////SECCION MELON////////////////////////////////////////////*/
+/*contenedor de todo*/
+.pregfrecuentes {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-shrink: 0;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+.rectpreguntas {
+  width: 100%;
+  height: 83px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*pregunta en si*/
+.pregunta {
+  background: #94a767;
+  border-radius: 30px;
+  height: 78px;
+  box-shadow: 0px 5px 0px 0px rgba(109, 119, 87, 1);
+  width: 66%;
+  color: #ffffff;
+  text-align: center;
+  font-family: "TireSwingBb-Bold", sans-serif;
+  font-size: 45px;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*respuestas a las preguntas*/
+.respuestas {
+  background-color: #efefef;
+  border-radius: 6px;
+  color: #000000;
+  text-align: justified;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  width: 55%;
+  padding: 1em;
+}
+
+.grafico {
+  width: 80%;
+  left: 22% ;
+  top: 1469.1px;
+  object-fit: cover;
+  aspect-ratio: 554.2/281.43;
+}
+
+/*///////////////////////FORMULARIO Y TEXTO//////////////////////////////////////////////////////////////*/
+
+.parraform {
+  color: #000000;
+  text-align: left;
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  position: relative;
+  width: 80%;
+  height: 92px;
+}
 
 form {
  
@@ -228,397 +545,20 @@ button {
   transition: background 0.3s;
 }
 
+.form-desktop {
+  align-self: stretch;
+  flex-shrink: 0;
+
+  position: relative;
+}
+
 .modal-content button:hover {
   background-color: #753EF4;;
 }
 
-/* Y aquí pondría mi carrusel :D
- SI TAN SOLO TUVIERA UNO >O<
 
+/*encargarse mas tarde*/
 
-/* TITULO, SUBTITULO Y FONDOS*/
-
-.imagen-principal {
-  width: 100%;
-  height: 951px;
- position: absolute;
-  left: 0px;
-  top: 0px;
-  object-fit: cover;
-}
-
-.logo-ly-v {
-
-  width: 60%;
-  top: 20px;
-
-}
-.logo-zanahoria-2 {
-  width: 60%;
-  height: 154px;
-}
-
-.subtitulo-principal {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 24px;
-  letter-spacing: 0.06em;
-  font-weight: 400;
-  width: 40%;
-  height: 170px;
-}
-.subtitulo-principal-span {
-  font-family: "Helvetica-Regular", sans-serif;
-}
-.subtitulo-principal-span2 {
-  font-family: "Helvetica-Bold", sans-serif;
-  font-weight: 700;
-}
-.titulo-principal {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Helvetica-Bold", sans-serif;
-  font-size: 42px;
-  font-weight: 700;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.boton1 {
-  background: #753ef4;
-  border-radius: 6px;
-  width: 456px;
-  height: 114px;
-  color: #ffffff;
-  text-align: center;
-  font-family: "Eina03SemiBold", sans-serif;
-  font-size: 35px;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/*TITULOS*/
-
-.tomate {
-  width: 56% ;
-  left: 22%;
-  top: 950px;
-  aspect-ratio: 858/129.79; 
-  color: #ffffff;
-  text-align: center;
-  text-indent: 70px;
-  font-family: "TireSwingBb-Bold", sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.zanahoria {
-  width: 56% ;
- 
-  left: 22%;
-  top: 2500px;
-  aspect-ratio: 858/129.79;
-  color: #ffffff;
-  text-align: center;
-  text-indent: 70px;
-  font-family: "TireSwingBb-Bold", sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.limon {
-  width: 56% ;
- 
-  left: 22%;
-  top: 4275px;
-  aspect-ratio: 858/129.79;
-  color: #ffffff;
-  text-align: center;
-  text-indent: 70px;
-  font-family: "TireSwingBb-Bold", sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.melon {
-  width: 56% ;
- 
-  left: 22%;
-  top: 5715px;
-  aspect-ratio: 858/129.79;
-  color: #ffffff;
-  text-align: center;
-  text-indent: 70px;
-  font-family: "TireSwingBb-Bold", sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/*CONTENIDO (en lo posible ordernarlo un poco, pero por ahora va)*/
-
-.parrafo-1 {
-  color: #000000;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 30px;
-  letter-spacing: 0.06em;
-  font-weight: 400;
-  position: relative;
-  width: 804px;
-  height: 180px;
-}
-.parrafo-1-span {
-  font-family: "Inter-Regular", sans-serif;
-}
-.parrafo-1-a {
-  color: #000000;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 30px;
-  letter-spacing: 0.06em;
-  font-weight: 400;
-  position: relative;
-  width: 804px;
-  height: 138px;
-}
-.parrafo-1-a-span {
-  font-family: "Inter-Regular", sans-serif;
-}
-.parrafo-2 {
-  color: #000000;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 30px;
-  letter-spacing: 0.06em;
-  font-weight: 400;
- 
-  left: 3.99px;
-  top: 654.6px;
-  width: 390px;
-  height: 394px;
-}
-.parrafo-2-a {
-  color: #000000;
-  text-align: left;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 30px;
-  letter-spacing: 0.06em;
-  font-weight: 400;
- 
-  left: 612.01px;
-  top: 654.75px;
-  width: 404px;
-  height: 297px;
-}
-.parrafo-2-a-span {
-  font-family: "Inter-Bold", sans-serif;
-  font-weight: 700;
-}
-.parrafo-2-a-span2 {
-  font-family: "Inter-Regular", sans-serif;
-}
-
-.parraform {
-  color: #000000;
-  text-align: left;
-  font-family: "Helvetica-Bold", sans-serif;
-  font-size: 40px;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  position: relative;
-  width: 80%;
-  height: 92px;
-}
-
-.div {
-  color: #000000;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 25px;
-  font-weight: 400;
- 
-  right: 80.47%;
-  left: 16.2%;
-  width: 3.33%;
-  bottom: 76.56%;
-  top: 17.98%;
-  height: 5.46%;
-}
-
-.inscribete-ya {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Eina03SemiBold", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
- 
-  right: 34.23%;
-  left: 34.01%;
-  width: 31.76%;
-  bottom: 8.52%;
-  top: 85.62%;
-  height: 5.86%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-.informacionjust {
-  background-color: #efefef;
-  border-radius: 6px;
-  color: #000000;
-  text-align: justified;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-   width: 60%;
-}
-.contenidocaja {
-  background-color: #efefef;
-  border-radius: 6px;
-  color: #000000;
-  text-align: justified;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-    width: 60%;
-}
-.dinerodonde {
-  background-color: #efefef;
-  border-radius: 6px;
-  color: #000000;
-  text-align: justified;
-  font-family: "Inter-Bold", sans-serif;
-  font-size: 28px;
-  letter-spacing: 0.03em;
-  font-weight: 700;
-  width: 60%;
-}
-.parrafo-3 {
-  color: #000000;
-  text-align: justified;
-  font-family: "-", sans-serif;
-  font-size: 32px;
-  letter-spacing: 0.06em;
-  font-weight: 400;
-  position: relative;
-  width: 648px;
-  height: 291px;
-}
-.parrafo-3-span {
-  font-family: "Inter-Medium", sans-serif;
-  font-weight: 500;
-}
-.parrafo-3-span2 {
-  font-family: "Inter-Bold", sans-serif;
-  font-weight: 700;
-}
-
-.image-2 {
-  border-style: solid;
-  border-color: #753ef4;
-  border-width: 9px;
-  width: 208.12px;
-  height: 34px;
- 
-  left:80%;
-  top: 8600px;
-  object-fit: cover;
-}
-
-.verde {
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 397px;
-  position: relative;
-  width: 60%;
-  left: 20%;
-  aspect-ratio: 1062/397;
-}
-
-.amarillo {
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 397px;
-  position: relative;
-
-  left: 20%;
-  width: 60%;
-  aspect-ratio: 1062/397;
-}
-
-.imagenes-zanahoria {
-  flex-shrink: 0;
-  width: 80%;
-  height: 480px;
-  position: static;
-  display: flex;
-  flex-direction: row
-}
-
-.cajasjuego {
-  width: 40%;
-  height: 40%;
-
-
-}
-.juegoensi {
-  width: 40%;
-  height: 40%;
- 
-  left: 611.8px;
-
-
-
-}
-.textos-mango {
-  flex-shrink: 0;
-  width: 1012.02px;
-  height: 394px;
-  position: static;
-}
-
-.juegodesplegado {
-  flex-shrink: 0;
-  width: 806px;
-  height: 537px;
-  position: relative;
-  object-fit: cover;
-  aspect-ratio: 806/537;
-}
-
-.form-desktop {
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 751px;
-  position: relative;
-}
-.rectangle-15 {
-  background: #efefef;
-  width: 100%;
-  height: 100%;
- 
-  right: 0%;
-  left: 0%;
-  bottom: 0%;
-  top: 0%;
-}
 
 .group-15 {
  
@@ -650,20 +590,7 @@ button {
   bottom: 50.73%;
   top: 39.28%;
 }
-.div2 {
-  color: #000000;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 25px;
-  font-weight: 400;
- 
-  right: 19.21%;
-  left: 16.2%;
-  width: 64.59%;
-  bottom: 52.46%;
-  top: 42.48%;
-  height: 5.06%;
-}
+
 .group-16 {
  
   inset: 0;
@@ -679,16 +606,7 @@ button {
   bottom: 26.36%;
   top: 63.65%;
 }
-.polygon-5 {
-  width: 4.08%;
-  height: 4.26%;
- 
-  right: 12.12%;
-  left: 83.8%;
-  bottom: 24.9%;
-  top: 70.84%;
-  overflow: visible;
-}
+
 .group-17 {
  
   inset: 0;
@@ -857,111 +775,6 @@ button {
   overflow: visible;
 }
 
-
-.pregfrecuentes {
-  flex-shrink: 0;
-  width: 80%;
-}
-.rectangle-7 {
-  background: #efefef;
-  border-radius: 6px;
-  width: 60%;
-  left: 20%;
-  height: 340.59px;
-  top: 242.7px;
-}
-
-
-.pregunta1 {
-  background: #94a767;
-  border-radius: 30px;
-  height: 78px;
- 
-  box-shadow: 0px 5px 0px 0px rgba(109, 119, 87, 1);
-  width: 66%;
-  left: 17%;
-  top: 170.41px;
-  aspect-ratio: 931.31/139.43;
-    color: #ffffff;
-  text-align: center;
-  font-family: "TireSwingBb-Bold", sans-serif;
-  font-size: 45px;
-  letter-spacing: -0.05em;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pregunta2 {
-  background: #94a767;
-  border-radius: 30px;
-  height: 78px;
- 
-  box-shadow: 0px 5px 0px 0px rgba(109, 119, 87, 1);
-  width: 66%;
-  left: 17%;
-  top: 638px;
-  aspect-ratio: 925.94/151;
-    color: #ffffff;
-  text-align: center;
-  font-family: "TireSwingBb-Bold", sans-serif;
-   font-size: 45px;
-  letter-spacing: -0.05em;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pregunta3 {
-  background: #94a767;
-  border-radius: 30px;
-  height: 78px;
- 
-  box-shadow: 0px 5px 0px 0px rgba(109, 119, 87, 1);
-  width: 66%;
-  left: 17%;
-  top: 1099px;
-  aspect-ratio: 933.83/156.13;
-    color: #ffffff;
-  text-align: center;
-  font-family: "TireSwingBb-Bold", sans-serif;
-    font-size: 45px;
-  letter-spacing: -0.05em;
-  font-weight: 700;
- 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.pregunta-desk-3 {
-  flex-shrink: 0;
-  width: 933.83px;
-  height: 679.66px;
-  position: static;
-}
-
-.grafico {
-  width: 56%;
- 
-  left: 22% ;
-  top: 1469.1px;
-  object-fit: cover;
-  aspect-ratio: 554.2/281.43;
-}
-.rectpreguntas {
-  width: 100%;
-  height: 83px;
-}
-
-.cartones-juego {
-  flex-shrink: 0;
-  width: 453px;
-  height: 453px;
-  position: relative;
-  object-fit: cover;
-  aspect-ratio: 1;
-}
-
 /*FOOTER*/
 
 footer{
@@ -970,6 +783,7 @@ footer{
   text-align: left;
   font-family: "Bold-RegularMasiva", sans-serif;
   font-weight: 400;
+  padding: 2em;
 }
 
 .leyendas-y-videojuegos {
